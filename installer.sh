@@ -20,7 +20,7 @@ function print_info_header() {
 # Set global configuration variables
 function set_configuration() {
     # jri
-    JDK_URL="https://ci.adoptopenjdk.net/view/ev3dev/job/openjdk11_build_ev3_linux/lastSuccessfulBuild/artifact/build/jdk-ev3.tar.gz"
+	JDK_URL="https://ci.adoptium.net/view/ev3dev/job/eljbuild/job/stretch-11/lastSuccessfulBuild/artifact/build/jdk-ev3.tar.gz"
     JDK_DIR="/opt/jdk-11-ev3"
 
     # packages
@@ -36,18 +36,18 @@ function set_configuration() {
 
     # brickpi java
     JRE_REPO_NAME="stretch-backports"
-    JRE_REPO="deb http://ftp.debian.org/debian $JRE_REPO_NAME main"
+    JRE_REPO="deb http://archive.debian.org/debian $JRE_REPO_NAME main"
 
     # java libraries
     JAVA_LIBRARY_DIR="/home/robot/java/libraries"
     JAVA_LIBRARY_LIST=""
     JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST https://jitpack.io/com/github/ev3dev-lang-java/ev3dev-lang-java/2.5.3/ev3dev-lang-java-2.5.3.jar"
     JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST https://jitpack.io/com/github/ev3dev-lang-java/lejos-commons/0.7.3/lejos-commons-0.7.3.jar"
-    JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST http://central.maven.org/maven2/net/java/dev/jna/jna/4.5.2/jna-4.5.2.jar"
-    JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST http://central.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"
-    JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST http://central.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar"
-    JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST http://central.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar"
-    JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST http://central.maven.org/maven2/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar"
+    JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/4.5.2/jna-4.5.2.jar"
+    JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"
+    JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar"
+    JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar"
+    JAVA_LIBRARY_LIST="$JAVA_LIBRARY_LIST https://repo.maven.apache.org/maven2/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar"
 
     # java appcds list
     JAVA_APPCDS_DIR="/home/robot/java/appcds"
